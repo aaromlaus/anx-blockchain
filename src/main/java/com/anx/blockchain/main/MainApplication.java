@@ -8,8 +8,8 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.anx.blockchain.checker.IEthereumChecker;
-import com.anx.blockchain.checker.impl.EthereumChecker;
+import com.anx.blockchain.checker.EthereumService;
+import com.anx.blockchain.checker.impl.EthereumServiceImpl;
 import com.anx.blockchain.entity.Transaction;
 import com.anx.blockchain.util.AnxUtil;
 
@@ -25,7 +25,7 @@ public class MainApplication {
 	}
 	
 	public static void checkTransaction(Transaction transaction) {
-		IEthereumChecker ethChecker = new EthereumChecker();
+		EthereumService ethChecker = new EthereumServiceImpl();
 		try {
 			ethChecker.checkTransaction(transaction);
 		} catch (IOException e) {

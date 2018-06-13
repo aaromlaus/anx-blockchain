@@ -15,11 +15,11 @@ import org.web3j.protocol.core.methods.response.EthTransaction;
 import org.web3j.protocol.http.HttpService;
 import org.web3j.utils.Convert.Unit;
 
-import com.anx.blockchain.checker.IEthereumChecker;
+import com.anx.blockchain.checker.EthereumService;
 import com.anx.blockchain.entity.Transaction;
 import com.anx.blockchain.util.UnitConverter;
 
-public class EthereumChecker implements IEthereumChecker {
+public class EthereumServiceImpl implements EthereumService {
 	
 	public void checkTransaction(Transaction transaction) throws IOException {
 		Web3j web3j = Web3j.build(new HttpService("https://ropsten.infura.io/bIiZ9ZlgIRraYClar19x"));

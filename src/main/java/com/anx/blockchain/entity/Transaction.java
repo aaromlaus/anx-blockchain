@@ -2,13 +2,26 @@ package com.anx.blockchain.entity;
 
 import java.math.BigDecimal;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Transaction {
 
+	@SerializedName("txid")
 	private String txnId;
+	
+	@SerializedName("time")
 	private String time;
+	
+	@SerializedName("address")
 	private String address;
+	
+	@SerializedName("type")
 	private String type;
+	
+	@SerializedName("amount")
 	private BigDecimal amount;
+	
+	@SerializedName("fee")
 	private BigDecimal fee;
 
 	public String getTxnId() {
