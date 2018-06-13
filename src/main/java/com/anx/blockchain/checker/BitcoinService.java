@@ -1,6 +1,6 @@
 package com.anx.blockchain.checker;
 
-import org.mvp.blockchain.platform.model.BitcoinTransaction;
+import com.anx.blockchain.entity.BitcoinTransaction;
 
 public interface BitcoinService {
 

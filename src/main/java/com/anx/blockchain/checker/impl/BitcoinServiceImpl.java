@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.json.JSONObject;
-import org.mvp.blockchain.platform.model.BitcoinTransaction;
-import org.mvp.blockchain.platform.model.TxInput;
-import org.mvp.blockchain.platform.model.TxOutput;
-import org.mvp.blockchain.platform.service.BitcoinService;
-import org.mvp.blockchain.util.ApiUtil;
-import org.mvp.blockchain.util.PropertyUtil;
+
+import com.anx.blockchain.checker.BitcoinService;
+import com.anx.blockchain.entity.BitcoinTransaction;
+import com.anx.blockchain.entity.TxInput;
+import com.anx.blockchain.entity.TxOutput;
+import com.anx.blockchain.util.ApiUtil;
+import com.anx.blockchain.util.PropertyUtil;
 
 import com.google.gson.Gson;
 

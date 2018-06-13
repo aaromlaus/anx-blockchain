@@ -19,10 +19,10 @@ public class Transaction {
 	private String type;
 	
 	@SerializedName("amount")
-	private BigDecimal amount;
+	private String amount;
 	
 	@SerializedName("fee")
-	private BigDecimal fee;
+	private String fee;
 
 	public String getTxnId() {
 		return txnId;
@@ -57,18 +57,18 @@ public class Transaction {
 	}
 
 	public BigDecimal getAmount() {
-		return amount;
+		return new BigDecimal(amount);
 	}
 
-	public void setAmount(BigDecimal amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
 	public BigDecimal getFee() {
-		return fee;
+		return new BigDecimal(fee);
 	}
 
-	public void setFee(BigDecimal fee) {
+	public void setFee(String fee) {
 		this.fee = fee;
 	}
 }
